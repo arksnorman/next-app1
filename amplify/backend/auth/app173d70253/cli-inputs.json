@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "app1b56578b0_identitypool_b56578b0",
+    "identityPoolName": "app173d70253_identitypool_73d70253",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "app1b56578b0",
-    "userPoolName": "app1b56578b0_userpool_b56578b0",
+    "resourceNameTruncated": "app173d70253",
+    "userPoolName": "app173d70253_userpool_73d70253",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,22 +31,37 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "app1b5b56578b0_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "app17373d70253_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "b56578b0",
-    "resourceName": "app1b56578b0",
+    "sharedId": "73d70253",
+    "resourceName": "app173d70253",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "defaultSocial",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": [],
     "hostedUI": true,
-    "hostedUIDomainName": "app1b56578b0-b56578b0",
+    "hostedUIDomainName": "app1d925a24c-d925a24c",
     "authProvidersUserPool": [
       "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
     "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://arksnorman.dev/\"],\"LogoutURLs\":[\"https://arksnorman.dev/signout/\"]}",
-    "userPoolGroupList": [],
-    "serviceName": "Cognito",
-    "usernameCaseSensitive": false,
-    "useEnabledMfas": true
+    "authProviders": []
   }
 }

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "auth": {
+      "app173d70253": [
+        "create",
+        "read"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

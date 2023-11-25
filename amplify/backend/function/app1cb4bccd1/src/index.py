@@ -4,6 +4,9 @@ def handler(event, context):
   print('received event:')
   print(event)
   
+  print('received event2:')
+
+  
   return {
       'statusCode': 200,
       'headers': {

@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 src = {editable = true, path = "./src"}
+Flask = "==3.0.0"
+requests = "==2.31.0"
 
 [requires]
 python_version = "3.8"
